@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.RadioButton?>
+
+<Pane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.auctionSearch.AuctionSearchController"
+	fx:id="root">
+	<TextFlow layoutX="0" layoutY="-10">
+		<Text text="J" fill="rgb(0, 255, 247)"
+			style="-fx-font-weight : bold; -fx-font-size : 50"></Text>
+		<Text text="e" fill="rgb(255, 0, 0)"
+			style="-fx-font-weight : bold; -fx-font-size : 50"></Text>
+		<Text text="b" fill="rgb(64, 0, 255)"
+			style="-fx-font-weight : bold; -fx-font-size : 50"></Text>
+		<Text text="a" fill="rgb(144, 0, 255)"
+			style="-fx-font-weight : bold; -fx-font-size : 50"></Text>
+		<Text text="y" fill="rgb(0, 255, 21)"
+			style="-fx-font-weight : bold; -fx-font-size : 50"></Text>
+	</TextFlow>
+
+	<Text fill="red" fx:id="infoText" style="-fx-font-size:16"
+		layoutX="150" layoutY="95"></Text>
+	<TextField fx:id="searchBar" layoutX="140" layoutY="10"
+		prefWidth="200" prefHeight="40"></TextField>
+	<Button fx:id="search" layoutX="340" layoutY="9" prefHeight="30"
+		text="Search/Refresh"
+		style="-fx-background-color:lightblue;-fx-font-size:18"
+		onMouseClicked="#handleSearch"></Button>
+	<Text text="Cerca per:" layoutX="150" layoutY="70"></Text>
+	<RadioButton fx:id="category" text="Category" layoutX="230"
+		layoutY="55"></RadioButton>
+	<Button fx:id="sell" text="Sell" prefHeight="30" prefWidth="70"
+		layoutY="9" layoutX="530" onMouseClicked="#handleShowSell"
+		style="-fx-background-color:lightgreen;-fx-font-size:18"></Button>
+	<Pagination fx:id="auctions" visible="false" layoutY="100"
+		prefWidth="600" prefHeight="530" style="-fx-font-size:22"></Pagination>
+</Pane>
+

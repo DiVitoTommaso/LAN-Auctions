@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:controller="application.auctionPost.AuctionPostController"
+	fx:id="root" prefHeight="350.0" prefWidth="500.0"
+	xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+	<TextFlow layoutX="150" layoutY="-10">
+		<Text text="J" fill="rgb(0, 255, 247)"
+			style="-fx-font-weight : bold; -fx-font-size : 52"></Text>
+		<Text text="e" fill="rgb(255, 0, 0)"
+			style="-fx-font-weight : bold; -fx-font-size : 52"></Text>
+		<Text text="b" fill="rgb(64, 0, 255)"
+			style="-fx-font-weight : bold; -fx-font-size : 52"></Text>
+		<Text text="a" fill="rgb(144, 0, 255)"
+			style="-fx-font-weight : bold; -fx-font-size : 52"></Text>
+		<Text text="y" fill="rgb(0, 255, 21)"
+			style="-fx-font-weight : bold; -fx-font-size : 52"></Text>
+	</TextFlow>
+	<AnchorPane>
+		<children>
+			<HBox layoutX="-159.0" prefHeight="100.0" prefWidth="200.0" />
+			<ImageView fx:id="productImage" fitHeight="182.0"
+				fitWidth="180.0" layoutX="13.0" layoutY="120.0" pickOnBounds="true"
+				preserveRatio="true" onMouseClicked="#handleImmagine" />
+			<TextField fx:id="productTitle" layoutX="294.0"
+				layoutY="102.0" prefHeight="25.0" prefWidth="82.0" />
+			<Text layoutX="32.0" layoutY="110.0" strokeType="OUTSIDE"
+				strokeWidth="0.0" text="Product Image:" wrappingWidth="171.0"
+				fill="blue" style="-fx-font-weight : bold;">
+				<font>
+					<Font size="16.0" />
+				</font>
+			</Text>
+
+			<Text layoutX="13" fx:id="info" style="-fx-font-weight:bold"
+				layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text=""
+				fill="red">
+				<font>
+					<Font size="13.5" />
+				</font>
+			</Text>
+
+			<Text fill="black" style="-fx-font-weight : bold;"
+				layoutX="294.0" layoutY="96.0" strokeType="OUTSIDE"
+				strokeWidth="0.0" text="Title:">
+				<font>
+					<Font size="16.0" />
+				</font>
+			</Text>
+			<Text fill="black" style="-fx-font-weight : bold;"
+				layoutX="198.0" layoutY="145.0" strokeType="OUTSIDE"
+				strokeWidth="0.0" text="Price:">
+				<font>
+					<Font size="16.0" />
+				</font>
+			</Text>
+			<TextField fx:id="productPrice" text="" layoutX="198.0"
+				layoutY="150.0" prefHeight="25.0" prefWidth="82.0" />
+			<Text fill="black" style="-fx-font-weight : bold;"
+				layoutX="294.0" layoutY="145.0" strokeType="OUTSIDE"
+				strokeWidth="0.0" text="Quantity:">
+				<font>
+					<Font size="16.0" />
+				</font>
+			</Text>
+			<Text fill="black" style="-fx-font-weight : bold;"
+				layoutX="392.0" layoutY="143.0" strokeType="OUTSIDE"
+				strokeWidth="0.0" text="Category:">
+				<font>
+					<Font size="16.0" />
+				</font>
+			</Text>
+			<TextField fx:id="productCategory" layoutX="392.0"
+				layoutY="150.0" prefHeight="25.0" prefWidth="82.0" />
+			<TextField fx:id="productQuantity" layoutX="294.0"
+				layoutY="150.0" prefHeight="25.0" prefWidth="82.0" text="" />
+			<Text fill="black" style="-fx-font-weight : bold;"
+				layoutX="196.0" layoutY="201.0" strokeType="OUTSIDE"
+				strokeWidth="0.0" text="Start date:">
+				<font>
+					<Font size="16.0" />
+				</font>
+			</Text>
+			<DatePicker fx:id="startDate" layoutX="198.0"
+				layoutY="208.0" prefHeight="25.0" prefWidth="109.0" />
+			<Text fill="black" style="-fx-font-weight : bold;"
+				layoutX="362.0" layoutY="201.0" strokeType="OUTSIDE"
+				strokeWidth="0.0" text="End date:">
+				<font>
+					<Font size="16.0" />
+				</font>
+			</Text>
+			<DatePicker fx:id="endDate" layoutX="362.0"
+				layoutY="208.0" prefHeight="25.0" prefWidth="109.0" />
+			<Text fill="black" style="-fx-font-weight : bold;"
+				layoutX="195.0" layoutY="263.0" strokeType="OUTSIDE"
+				strokeWidth="0.0" text="Start hour:">
+				<font>
+					<Font size="16.0" />
+				</font>
+			</Text>
+			<TextField fx:id="startHour" layoutX="198.0"
+				layoutY="267.0" prefHeight="25.0" prefWidth="109.0" />
+			<TextField fx:id="endHour" layoutX="362.0" layoutY="267.0"
+				prefHeight="25.0" prefWidth="109.0" />
+			<Text fill="black" style="-fx-font-weight : bold;"
+				layoutX="362.0" layoutY="262.0" strokeType="OUTSIDE"
+				strokeWidth="0.0" text="End hour:">
+				<font>
+					<Font size="16.0" />
+				</font>
+			</Text>
+			<Button layoutX="285.0" layoutY="304.0"
+				style="-fx-background-color:lightgreen" mnemonicParsing="false"
+				prefHeight="33.0" prefWidth="100.0" text="Invio"
+				onMouseClicked="#handleSend">
+				<font>
+					<Font size="16.0" />
+				</font>
+			</Button>
+		</children>
+	</AnchorPane>
+
+</Pane>

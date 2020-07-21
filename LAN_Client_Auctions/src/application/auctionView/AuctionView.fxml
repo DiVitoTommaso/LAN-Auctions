@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.control.Label?>
+
+
+<Pane fx:id="root" prefWidth="500.0"
+	xmlns="http://javafx.com/javafx/8"
+	fx:controller="application.auctionView.AuctionViewController"
+	xmlns:fx="http://javafx.com/fxml/1">
+	<TextFlow layoutX="150" layoutY="-10">
+		<Text text="J" fill="rgb(0, 255, 247)"
+			style="-fx-font-weight : bold; -fx-font-size : 52"></Text>
+		<Text text="e" fill="rgb(255, 0, 0)"
+			style="-fx-font-weight : bold; -fx-font-size : 52"></Text>
+		<Text text="b" fill="rgb(64, 0, 255)"
+			style="-fx-font-weight : bold; -fx-font-size : 52"></Text>
+		<Text text="a" fill="rgb(144, 0, 255)"
+			style="-fx-font-weight : bold; -fx-font-size : 52"></Text>
+		<Text text="y" fill="rgb(0, 255, 21)"
+			style="-fx-font-weight : bold; -fx-font-size : 52"></Text>
+	</TextFlow>
+	<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+		minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0">
+		<children>
+			<AnchorPane prefHeight="350.0" prefWidth="500.0">
+				<children>
+					<HBox id="hboxContainer" layoutX="-159.0" prefHeight="100.0"
+						prefWidth="200.0" />
+					<ImageView fx:id="productImage" fitHeight="162.0"
+						fitWidth="221.0" layoutX="14.0" layoutY="114.0"
+						pickOnBounds="true" preserveRatio="true" />
+					<Label fx:id="productPrice" layoutX="190.0" layoutY="171.0"
+						style="-fx-font-size : 16; -fx-font-weight:bold;" text="Price:"
+						maxWidth="150">
+						<font>
+							<Font size="16.0" />
+						</font>
+					</Label>
+					<Label fx:id="productQuantity" layoutX="192.0"
+						layoutY="116.0" style="-fx-font-size : 16;-fx-font-weight:bold;"
+						text="Q:" maxWidth="100">
+						<font>
+							<Font size="16.0" />
+						</font>
+					</Label>
+					<Label fx:id="productCategory" layoutX="14.0" layoutY="288.0"
+						style="-fx-font-size : 16;-fx-font-weight:bold;" text="Categoria:"
+						maxWidth="200">
+						<font>
+							<Font size="16.0" />
+						</font>
+					</Label>
+					<Label fx:id="owner" layoutX="14.0" layoutY="308.0"
+						style="-fx-font-size : 16;-fx-font-weight:bold;" text="Owner:"
+						maxWidth="200">
+						<font>
+							<Font size="16.0" />
+						</font>
+					</Label>
+					<Label fx:id="bestOffer" layoutX="14.0" layoutY="328.0"
+						style="-fx-font-size : 16;-fx-font-weight:bold;"
+						text="Best Offer:" maxWidth="200">
+						<font>
+							<Font size="16.0" />
+						</font>
+					</Label>
+					<Label fx:id="startDate" layoutX="192.0" layoutY="235.0"
+						style="-fx-font-size : 16;-fx-font-weight:bold"
+						text="Start Auction: ">
+						<font>
+							<Font size="16.0" />
+						</font>
+					</Label>
+					<Label fx:id="endDate" layoutX="192.0" layoutY="255.0"
+						text="End Auction: "
+						style="-fx-font-size : 16;-fx-font-weight:bold">
+						<font>
+							<Font size="16.0" />
+						</font>
+					</Label>
+					<Button fx:id="sendButton" layoutX="350.0" layoutY="186.0"
+						mnemonicParsing="false" prefHeight="33.0" prefWidth="100.0"
+						text="Send" style="-fx-background-color:lightblue"
+						onMouseClicked="#handleSendBet">
+						<font>
+							<Font size="16.0" />
+						</font>
+					</Button>
+					<Label fx:id="infoText" layoutX="230.0" layoutY="295.0"
+						style="-fx-font-size : 16;-fx-font-weight:bold;-fx-text-fill:green">
+						<font>
+							<Font size="16.0" />
+						</font>
+					</Label>
+					<Label fx:id="productTitle" layoutY="72" layoutX="14.0"
+						maxWidth="450" style="-fx-font-size:32;-fx-font-weight:bold">
+						<font>
+							<Font size="16.0" />
+						</font>
+					</Label>
+					<TextField fx:id="makeOffer" text="0" layoutX="350.0"
+						layoutY="154.5" prefHeight="25.0" prefWidth="100.0" />
+					<Label layoutX="349.0" layoutY="132"
+						style="-fx-font-size : 15.5;-fx-font-weight:bold"
+						text="Make an Offer:">
+						<font>
+							<Font size="16.0" />
+						</font>
+					</Label>
+				</children>
+			</AnchorPane>
+		</children>
+	</AnchorPane>
+</Pane>
